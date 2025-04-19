@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Social Media App</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div id="app">
+    <h1>Social Media</h1>
+    <div id="auth">
+      <input id="username" placeholder="Username" />
+      <input id="password" type="password" placeholder="Password" />
+      <button onclick="register()">Register</button>
+      <button onclick="login()">Login</button>
+    </div>
+    <div id="postForm" style="display:none;">
+      <textarea id="postContent" placeholder="Write a post..."></textarea>
+      <button onclick="createPost()">Post</button>
+    </div>
+    <div id="posts"></div>
+  </div>
+  <script src="js/app.js"></script>
+</body>
+</html>
